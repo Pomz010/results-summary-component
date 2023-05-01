@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body class="sm:flex justify-center h-screen">
+
+  <div class="flex sm:items-center sm:max-w-prose">
+    <div class="grid sm:grid-cols-2 mx-auto w-full shadow-2xl shadow-slate-300 sm:rounded-3xl">
+      <div class="sm:rounded-3xl rounded-b-3xl py-7 px-4 bg-gradient-to-b from-indigo-600 from-30% to-blue-800 to-80% text-center grid justify-items-center text-indigo-300">
+        <h1 class="text-sm font-semibold">Your Result</h1>
+        <div class="my-4 bg-gradient-to-b from-indigo-800 w-28 h-28 rounded-full grid place-items-center">
+          <div>
+            <span class="block text-white text-center text-4xl font-extrabold">76</span>
+            <span class="text-xs">of 100</span> 
+          </div>
+        </div>
+        <div>
+          <span class="text-white font-extrabold text-lg">Great</span>
+          <p class="text-xs">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+    
+      <div class="p-5 h-full ">
+        <h2 class="font-bold text-sm">Summary</h2>
+        <ul>
+          <li class="bg-red-100 py-3 px-4 flex justify-between my-3 rounded-md text-xs font-bold">
+            <span>
+              <img class="inline" src="img/icon-reaction.svg" alt="Reaction icon">
+              <span>Reaction</span>
+            </span>        
+            <span>80 <span class="text-slate-400">/ 100</span></span>
+          </li>
+          <li class="bg-yellow-100 py-3 px-4 flex justify-between my-3 rounded-md text-xs font-bold">
+            <span>
+              <img class="inline" src="img/icon-memory.svg" alt="Memory icon">
+              <span>Memory</span>
+            </span>
+            
+            <span>92 <span class="text-slate-400">/ 100</span></span>
+          </li>
+          <li class="bg-green-100 py-3 px-4 flex justify-between my-3 rounded-md text-xs font-bold">
+            <span>
+              <img class="inline" src="img/icon-verbal.svg" alt="Verbal icon">
+              <span>Verbal</span>
+            </span>
+            <span>61 <span class="text-slate-400">/ 100</span></span>
+          </li>
+          <li class="bg-blue-100 py-3 px-4 flex justify-between my-3 rounded-md text-xs font-bold">
+            <span>
+              <img src="img/icon-visual.svg" alt="" class="inline">
+              <span>Visual</span>
+            </span>
+            <span>72 <span class="text-slate-400">/ 100</span></span>
+          </li>
+        </ul>
+        <button class="rounded-full text-sm py-3 w-full block font-semibold text-white text-center bg-blue-950 hover:bg-gradient-to-b from-indigo-600 from-30% to-blue-800">Continue</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
